@@ -1,0 +1,13 @@
+
+<h1>Votre text Contient {{word}} Mots<h1/>
+<a href="{% url 'home' %}">Start again<a/>
+<h2>vous avez taper le text suivant :<h2/>
+
+ {{text}}
+
+<h2>Words Count:<h2/>
+{% for word, counttotal in sortedwords %}
+
+({{word}}-{{counttotal}})
+<br />
+{% endfor %}
